@@ -1,34 +1,103 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for page in site.pages %}
-        <url>
-            <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            {% if page.layout == 'main' %}
-                <changefreq>weekly</changefreq>
-                <priority>1</priority>
-                <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-            {% else %}
-                <changefreq>monthly</changefreq>
-                <priority>0.5</priority>
-            {% endif %}
-        </url>
-    {% endfor %}
-    {% for post in site.posts %}
-        <url>
-            <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
-        </url>
-    {% endfor %}
-    {% for author in site.authors %}
-        <url>
-            <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-        </url>
-    {% endfor %}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/about/</loc>
+<lastmod>2025-07-31T01:22:47+02:00</lastmod>
+</url>
+<url>
+<loc>/contact/</loc>
+<lastmod>2025-07-31T01:22:47+02:00</lastmod>
+</url>
+<url>
+<loc>/elements/</loc>
+<lastmod>2025-07-31T01:22:47+02:00</lastmod>
+</url>
+<url>
+<loc>/tags/</loc>
+<lastmod>2025-07-31T01:22:47+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/understanding-player-motivation-and-engagement</loc>
+<lastmod>2024-04-05T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/best-practices-for-efficient-programming</loc>
+<lastmod>2024-04-08T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/portfolio-highlights-in-product-design</loc>
+<lastmod>2024-04-10T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/how-to-stay-productive-without-burning-out</loc>
+<lastmod>2024-04-15T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/trends-to-watch-in-the-next-decade</loc>
+<lastmod>2024-04-17T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/photography-tips-for-portfolio-success</loc>
+<lastmod>2024-04-21T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/expert-advice-for-design-professionals</loc>
+<lastmod>2024-05-04T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/advanced-concepts-in-product-design</loc>
+<lastmod>2024-05-07T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/essential-skills-for-successful-coding</loc>
+<lastmod>2024-05-08T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/blog/strategies-for-effective-development</loc>
+<lastmod>2024-06-03T14:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/personal-finance-dashboard</loc>
+<lastmod>2024-04-20T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/virtual-reality-travel-app</loc>
+<lastmod>2024-04-24T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/immersive-gaming-interface</loc>
+<lastmod>2024-05-02T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/smartwatch-health-tracker</loc>
+<lastmod>2024-05-03T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/beauty-care-website-design</loc>
+<lastmod>2024-05-04T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/promotional-landing-page</loc>
+<lastmod>2024-05-07T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/creating-a-responsive-grid</loc>
+<lastmod>2024-05-12T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/project/fashion-ecommerce-app</loc>
+<lastmod>2024-05-16T07:01:35+02:00</lastmod>
+</url>
+<url>
+<loc>/projects/</loc>
+</url>
+<url>
+<loc>/blog/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/blog/page/2/</loc>
+</url>
 </urlset>
