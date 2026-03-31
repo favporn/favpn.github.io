@@ -2,7 +2,7 @@
 layout: post
 author: person
 type: vimeo
-vimeo-embed: <iframe src="https://player.vimeo.com/video/107591790" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+vimeo-embed: <iframe src="https://player.vimeo.com/video/107591790" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 title: Vimeo
 homedisplay: iframe
 tags: [video, iframe]
