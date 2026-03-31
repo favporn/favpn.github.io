@@ -34,14 +34,6 @@
                                     <iframe src="https://www.youtube.com/embed/{{page.yt-video-id}}?feature=player_detailpage" allowfullscreen></iframe>
                                 </div></div>
                             {% endif %}
-                        {% elsif page.type == "image" or page.type == "gallery" %}
-                            {% if page.featimg %}
-                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
-                            {% endif %}
-                        {% elsif page.type == "audio" %}
-                            {% if page.audio-embed %}
-                                {{ page.audio-embed }}
-                            {% endif %}
               <div class="video-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                   <polygon points="40,30 65,50 40,70"></polygon>
