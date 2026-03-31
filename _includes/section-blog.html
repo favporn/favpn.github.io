@@ -20,6 +20,7 @@
           <div class="article__content">
 
             <div class="article__head">
+			{{ post.content }}
               {% if post.image and post.video_embed %}
               <div class="video-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -27,12 +28,9 @@
                 </svg>
               </div>
               {% endif %}
-			  
               {% if post.image %}
               <a href="{{ post.url | relative_url }}" class="article__image">
-                <div class="post-video__wrap">
-        <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+                <img class="lazy" data-src="{{ post.image | relative_url }}" alt="{{ post.title }}">
               </a>
               {% endif %}
             </div>
