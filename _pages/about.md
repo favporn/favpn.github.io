@@ -2,14 +2,28 @@
 layout: page
 title: About <em>Me</em>
 permalink: /about/
-# image: '/images/profile_image_sidebar.jpg'
+image: '/images/100.jpg'
 ---
-I build tools and systems that make data reliable, accessible, and useful.
+Hello there!
+Welcome to my corner of the digital world. My name is Ty, and I am an educator-turned-cybersecurity enthusiast with a mission to make the digital space safer for everyone. With a Master’s degree in Teaching and a deep passion for learning, I’ve dedicated my career to helping others grow—and now, I’m channeling that same dedication into cybersecurity as an aspiring SOC Analyst.
 
-My background spans data analysis, systems administration, process automation, and compliance-regulated environments. I have spent the better part of a decade solving operational problems by building things — from Python ETL tools and Excel automation systems to Power BI dashboards and local LLM applications. The through-line in all of it is the same: find where the friction is, understand what the people closest to the problem actually need, and build something they can own and use without coming back to me every time.
+> Security is not a product, but a process. It’s about people, education, and continuous improvement.
+> <cite>Bruce Schneier</cite>
 
-I work daily with SQL, Python, and Power BI, and I integrate AI tools including Claude, GitHub Copilot, and Microsoft Copilot into my workflows as standard practice. I have operated within FERPA and HIPAA compliance frameworks, which means data accuracy and responsible access are foundational to how I approach every project.
+Coming from a strong background in education, I’ve always believed that teaching is one of the most powerful tools to inspire and empower others. Whether I’m breaking down a complex concept in the classroom or troubleshooting a security vulnerability in a digital environment, I find joy in exploring, explaining, and simplifying the intricate. My transition into cybersecurity stems from my belief that knowledge should not only empower but also protect.
 
-Outside of professional work I contribute to open source projects, participate in knowledge-sharing forums, and volunteer time to help others navigate the technology landscape. Giving back to the community that helped shape my skills is something I take seriously.
+In today’s ever-evolving digital landscape, cybersecurity is a cornerstone of safety. My goal is to bridge my teaching expertise with my cybersecurity skills to educate others about the importance of staying secure online. As I grow into the role of a SOC Analyst, I’m committed to applying my problem-solving skills and attention to detail to protect systems, monitor threats, and mitigate risks.
 
-I am currently open to data analyst, systems analyst, and data operations roles at companies where building reliable, impactful data systems is the core of the work.
+![Friends](/images/102.jpg#wide)
+*Photo by [Jessica Felicio](https://unsplash.com/@jekafe) on [Unsplash](https://unsplash.com/photos/grayscale-photo-of-woman-standing-between-two-men-CT6G8Mz4grs)*
+
+Curiosity has always been my compass. As a perpetual learner, I am excited to dive deep into new technologies, methodologies, and frameworks within the cybersecurity world. Whether it’s mastering Linux, Python, or learning through hands-on labs, I thrive in environments that challenge me to grow. This journey is not just about advancing my career—it’s about embracing the joy of learning and sharing that joy with others.
+
+Teaching is my foundation, and I carry that spirit with me in cybersecurity. I aim to mentor, collaborate, and contribute to building a safer online world. Whether it’s helping a student grasp a new concept, documenting cybersecurity labs to guide other learners, or joining discussions in the community, I believe in giving back to the field that has opened so many doors for me.
+
+![Friends](/images/99.jpg)
+
+For me, cybersecurity is not just a career—it’s an opportunity to combine my skills in teaching, analysis, and problem-solving to make a meaningful impact. Every challenge is an opportunity to grow, every success inspires me to push further, and every experience strengthens my commitment to keeping digital spaces safe for all.
+
+
+***

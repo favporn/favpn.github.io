@@ -34,22 +34,16 @@ layout: default
     {% if page.video_embed %}
     <div class="post-video">
       <div class="post-video__wrap">
-        <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="{{ page.title | escape }} video"></iframe>
+        <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
     {% else %}
 
     {% if page.image %}
-      <div class="post-image {{ page.custom_image_class }}">
-        <img
-          class="lazy"
-          data-src="{{ page.image | relative_url }}"
-          alt="{{ page.title }}"
-          loading="lazy"
-        >
-      </div>
+    <div class="post-image">
+      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
     {% endif %}
-
     {% endif %}
   </div>
   <!-- end post head -->

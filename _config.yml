@@ -29,7 +29,6 @@ collections:
     output: true
     permalink: /project/:slug
 
-# Extra comments for future collections
 # Pages Path
 defaults:
   - scope:
@@ -51,16 +50,7 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  # - scope:
-  #     path: ""
-  #     type: "resume"
-  #   values:
-  #     layout: "resume"
 
 sass:
   sass_dir: _sass
   style: compressed
-
-exclude:
-  - resume.md
-  - _data/resume_data.yml

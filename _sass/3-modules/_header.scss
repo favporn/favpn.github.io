@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2px $base-spacing-unit;
+    padding: 24px $base-spacing-unit;
 
     @media (max-width: $mobile) {
       padding: 20px $base-spacing-unit;
@@ -45,7 +45,7 @@
 
 .logo__image,
 .logo__image__dark {
-  max-height: 125px;
+  max-height: 50px;
 }
 
 .logo__image__dark {
@@ -94,7 +94,7 @@
     .nav__list {
       flex-direction: column;
       width: 100%;
-      margin-bottom: 8px; // changed
+      margin-bottom: 8px;
 
       .nav__item {
         display: block;
@@ -125,7 +125,7 @@
             font-size: 16px;
 
             &:last-child {
-              margin-bottom: 1px;
+              margin-bottom: 8px;
             }
           }
         }

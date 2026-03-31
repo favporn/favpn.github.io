@@ -20,14 +20,9 @@ layout: default
     {% else %}
 
     {% if page.image %}
-      <div class="page-image {{ page.custom_image_class }}">
-        <img
-          class="lazy"
-          data-src="{{ page.image | relative_url }}"
-          alt="{{ page.title }}"
-          loading="lazy"
-        >
-      </div>
+    <div class="page-image">
+      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
     {% endif %}
     {% endif %}
   </div>

@@ -1,36 +1,8 @@
-/* ==========================================================
-   POST + PAGE LAYOUTS  —  Baleon (Modified)
-   Includes responsive fixes + image scaling variants
-   ========================================================== */
-
-/* --- Shared Head Section --- */
+/* Post + Page */
 .post-head,
 .page-head {
   max-width: 960px;
   margin: 0 auto 32px;
-
-  .post__content img:not(.swiper-slide img),
-  .page__content img:not(.swiper-slide img) {
-    border-radius: 24px;
-    overflow: hidden;
-    cursor: zoom-in;
-
-    &.image-link {
-      cursor: pointer;
-    }
-
-    /* Hero-width inline image override via hash */
-    &[src$='#wide'] {
-      display: block;
-      width: 100vw;
-      max-width: none;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      border-radius: 0;
-      pointer-events: none;
-      user-select: none;
-    }
-  }
 
   &.without-image {
     max-width: 780px;
@@ -88,88 +60,55 @@
     }
   }
 
-  /* --- Default image container --- */
   .post-image,
   .page-image {
     position: relative;
     transform: translate(0);
-    width: 100%;
-    height: auto;
+    aspect-ratio: 4/3;
+    border-radius: 24px;
     overflow: hidden;
-    border-radius: 20px;
     background: var(--background-alt-color);
-    margin: 1.5rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     img {
-      position: static;
-      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
       user-select: none;
-      border-radius: inherit;
     }
-  }
 
-  /* Fallback for browsers without aspect-ratio */
-  @supports not (aspect-ratio: 4/3) {
-    .post-image,
-    .page-image {
+    @supports not (aspect-ratio: 4/3) {
       padding-bottom: 75%;
     }
   }
 
-  /* --- Contained variant (project screenshots, icons) --- */
-  .post-image--contain,
-  .page-image--contain {
-    width: 100%;
-    max-width: 780px;
-    height: auto;
-    aspect-ratio: auto;
-    overflow: visible;
-    border-radius: 12px;
-    background: none;
-    margin: 1.5rem auto;
-    display: block;
+  .post-video,
+  .page-video {
+    margin-bottom: 32px;
+    border-radius: 24px;
+    overflow: hidden;
+    transform: translate(0);
+    background-color: var(--background-alt-color);
 
-    img {
-      position: static;
+    .post-video__wrap,
+    .page-video__wrap {
+      position: relative;
       width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      border-radius: inherit;
-    }
+      height: 0;
+      padding-bottom: 75%;
 
-    @media (max-width: $mobile) {
-      width: 90%;
-    }
-  }
-
-  /* --- Wide variant (edge-to-edge hero image) --- */
-  .post-image--wide,
-  .page-image--wide {
-    display: block;
-    width: 100vw !important;
-    max-width: none !important;
-    margin-left: 50% !important;
-    transform: translateX(-50%) !important;
-    border-radius: 0 !important;
-    aspect-ratio: auto !important;
-
-    img {
-      width: 100% !important;
-      height: auto !important;
-      object-fit: contain !important;
-      position: static !important;
-      border-radius: 0 !important;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
-  /* --- Responsive Typography --- */
   @media (max-width: $desktop) {
     .post-info,
     .page-info {
@@ -179,6 +118,11 @@
     .post-title,
     .page-title {
       font-size: 46px;
+    }
+
+    .post-image,
+    .page-image {
+      border-radius: 20px;
     }
   }
 
@@ -195,7 +139,6 @@
   }
 }
 
-/* --- Body Content Area --- */
 .post,
 .page {
   max-width: 780px;
@@ -203,15 +146,15 @@
 
   .post__content,
   .page__content {
+
     a {
       font-weight: 500;
       text-decoration-color: var(--link-color);
     }
 
-    /* Responsive inline images */
     img,
     .gallery {
-      & + em {
+      &+em {
         a {
           text-decoration-color: transparent;
 
@@ -223,17 +166,15 @@
       }
     }
 
+
     .js-reframe {
       border-radius: 24px;
       overflow: hidden;
     }
 
     img {
-      display: block;
-      width: 100%;
-      height: auto;
       border-radius: 24px;
-      object-fit: contain;
+      overflow: hidden;
       cursor: zoom-in;
 
       &.image-link {
@@ -241,7 +182,6 @@
       }
     }
 
-    /* Inline “#wide” tag images */
     img[src$='#wide'] {
       display: block;
       width: 100vw;
@@ -257,8 +197,7 @@
   @media (max-width: $desktop) {
     .post__content,
     .page__content {
-      .js-reframe,
-      img {
+      .js-reframe, img {
         border-radius: 20px;
       }
     }
@@ -267,15 +206,13 @@
   @media (max-width: $mobile) {
     .post__content,
     .page__content {
-      .js-reframe,
-      img {
+      .js-reframe, img {
         border-radius: 12px;
       }
     }
   }
 }
 
-/* --- Post Bottom Meta Section --- */
 .post__bottom,
 .page__bottom {
   display: flex;
@@ -292,7 +229,6 @@
   }
 }
 
-/* --- Author --- */
 .post__author {
   display: flex;
   align-items: center;
@@ -335,7 +271,6 @@
   }
 }
 
-/* --- Navigation --- */
 .post__navigation {
   padding: 32px 0;
   border-bottom: 1px solid var(--border-color);
@@ -370,7 +305,7 @@
   }
 }
 
-/* --- Share --- */
+/* Share */
 .share {
   .share__title {
     margin-bottom: 20px;
@@ -406,7 +341,9 @@
     width: 40px;
     height: 40px;
     font-size: 18px;
+    text-transform: uppercase;
     border: none;
+    text-decoration: none;
     border-radius: 12px;
     background: var(--background-alt-color);
 
@@ -417,7 +354,7 @@
   }
 }
 
-/* --- Related Posts --- */
+/* Related */
 .post__related {
   margin-bottom: -32px;
 
@@ -426,7 +363,7 @@
   }
 }
 
-/* --- Comments --- */
+/* Disqus */
 .show-comments {
   text-align: center;
 }
@@ -441,7 +378,7 @@
   }
 }
 
-/* --- 404 Page --- */
+/* 404 Page */
 .error {
   text-align: center;
 
@@ -460,11 +397,4 @@
       font-size: 80px;
     }
   }
-}
-
-/* --- Project Header Modifiers --- */
-.project-header.page-image--contain,
-.page-image--contain.project-header {
-  max-width: 420px;
-  margin: 1.5rem auto;
 }
