@@ -48,15 +48,6 @@
                 •
                 {% endif %}
                 <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-                •
-                <span class="article__minutes">
-                  {% assign words = post.content | number_of_words %}
-                  {% if words < 360 %}
-                    1 min read
-                  {% else %}
-                    {{ words | divided_by:180 }} min read
-                  {% endif %}
-                </span>
               </div>
             </div>
 
@@ -70,7 +61,7 @@
   </div>
 
   <div class="section__navigation">
-    <a href="{{ '/blog' | relative_url }}" class="button section__button">All Articles <i class="fa-solid fa-arrow-up"></i></a>
+    <a href="{{ '/blog' | relative_url }}" class="button section__button">All Videos <i class="fa-solid fa-arrow-up"></i></a>
   </div>
 </section>
 <!-- end section blog -->
