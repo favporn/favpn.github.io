@@ -49,6 +49,10 @@ layout: default
   <article class="post">
     <div class="post__content">
       {{ content }}
+	  	  <p style="text-align:center;">
+  <strong>Video off? Report here:</strong><br>
+<button onclick="navigator.clipboard?.writeText(window.location.href); window.open('https://chatroll.com/embed/chat/report-broken-links-here?id=CXQ85xyv04_&platform=html' + encodeURIComponent(window.location.href), '_blank')">REPORT</button>
+</p>
     </div>
 
     <div class="post__bottom">
@@ -74,7 +78,7 @@ layout: default
     <div class="post__navigation">
       <a class="post__navigation__prev" href="{{ page.previous.url | relative_url }}">
         <h3 class="post__navigation__info">Explore <em>Next</em></h3>
-        <h3 class="post__navigation__title">{{ page.previous.title }}</h3>
+        <h4 class="post__navigation__title">{{ page.previous.title }}</h4>
       </a>
     </div>
     {% endif %}
