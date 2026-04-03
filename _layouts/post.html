@@ -103,7 +103,7 @@ layout: default
         {% endif %}
       {% endif %}
     {% endfor %}
-    {% if sameTagCount >= minCommonTags %}
+    {% if sameTagCount >= minCommonTags or post.tags == empty %}
       {% assign related = true %}
     {% endif %}
   {% endfor %}
@@ -127,7 +127,7 @@ layout: default
           {% endif %}
         {% endfor %}
 
-        {% if sameTagCount >= minCommonTags %}
+        {% if sameTagCount >= minCommonTags or post.tags == empty %}
 
         {% include article.html %}
 
