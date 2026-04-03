@@ -39,7 +39,86 @@
               {% endif %}
               {% endfor %}
             </ul>
-          </div>
+			<ul class='buscador'>
+		
+			<button class="nav__link button button--icon" onclick="toggleSearch()">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<div id="headerSearchBox" class="header__search-box">
+  <input 
+    type="text" 
+    id="headerSearchInput"
+    placeholder="Buscar vídeos..."
+    onkeydown="handleHeaderSearch(event)">
+</div>
+
+<style>
+ul.buscador {
+margin-left: -6%;
+margin-bottom: 0px;
+}
+
+@media (max-width: 1024px) {
+	ul.buscador {
+	width: 1px;
+	margin-left: 123px;
+	}
+}
+
+.header__search-box {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.header__search-box input {
+  width: 220px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 14px;
+}
+</style>
+
+<script>
+function toggleSearch() {
+  const box = document.getElementById("headerSearchBox");
+  box.style.display = (box.style.display === "block") ? "none" : "block";
+}
+
+// opcional: fecha ao clicar fora
+document.addEventListener("click", function(e) {
+  const box = document.getElementById("headerSearchBox");
+  const btn = document.querySelector(".button--icon");
+
+  if (!box.contains(e.target) && !btn.contains(e.target)) {
+    box.style.display = "none";
+  }
+});
+</script>
+  
+<script>
+function handleHeaderSearch(event) {
+  if (event.key === "Enter") {
+    const input = document.getElementById("headerSearchInput");
+    const query = input.value.trim();
+
+    if (query) {
+      window.location.href = "/pages/search/?q=" + encodeURIComponent(query);
+    }
+
+    event.preventDefault();
+  }
+}
+</script>
+</div>
+          </ul>
 
           <div class="nav-button">
             {% if site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
@@ -60,7 +139,6 @@
             {% endif %}
           </div>
         </nav>
-
       </div>
     </div>
   </div>
