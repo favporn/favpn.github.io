@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", initSearch);
 <input type="text" id="searchInput" placeholder="Buscar vídeos..." onkeyup="searchPosts()">
 
 <div class="row" id="postsList">
-  {% for post in site.posts %}
+{% for post in site.posts %}
   <div class="article col col-6 col-t-12 post-item">
     <div class="article__content">
 
