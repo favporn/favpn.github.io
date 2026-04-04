@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-baseurl: ""
+baseurl: "docs"
 url: "https://favpn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 destination: docs
 
