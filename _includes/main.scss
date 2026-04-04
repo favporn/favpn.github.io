@@ -39,77 +39,77 @@
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
-@use '0-settings/variables';
-@use '0-settings/color-scheme';
-@use '0-settings/mixins';
-@use '0-settings/helpers';
+@import '0-settings/variables';
+@import '0-settings/color-scheme';
+@import '0-settings/mixins';
+@import '0-settings/helpers';
 
 /* Font Awesome (v6.5.1) */
-@use '0-settings/brands';
-@use '0-settings/solid';
-@use '0-settings/regular';
-@use '0-settings/fontawesome';
+@import '0-settings/brands';
+@import '0-settings/solid';
+@import '0-settings/regular';
+@import '0-settings/fontawesome';
 
 
 /* =======================
 :: 1-Tools and Libs
 ======================= */
 /* >>>>>>>>>>>>>> :: 1.1-Normalize <<<<<<<<<<<<<<< */
-@use '1-tools/normalize';
+@import '1-tools/normalize';
 /* >>>>>>>>>>>>>> :: 1.2-Reset <<<<<<<<<<<<<<< */
-@use '1-tools/reset';
+@import '1-tools/reset';
 /* >>>>>>>>>>>>>> :: 1.3-Shared <<<<<<<<<<<<<<< */
-@use '1-tools/shared';
+@import '1-tools/shared';
 /* >>>>>>>>>>>>>> :: 1.4-Syntax Highlighting <<<<<<<<<<<<<<< */
-@use '1-tools/syntax-highlighting';
+@import '1-tools/syntax-highlighting';
 /* >>>>>>>>>>>>>> :: 1.5-Grid <<<<<<<<<<<<<<< */
-@use '1-tools/grid';
+@import '1-tools/grid';
 /* >>>>>>>>>>>>>> :: 1.6-Splide <<<<<<<<<<<<<<< */
-@use '1-tools/splide';
+@import '1-tools/splide';
 
 
 /* =======================
 :: 2-Base Styles
 ======================= */
 /* >>>>>>>>>>>>>> :: 2.1-Base <<<<<<<<<<<<<<< */
-@use '2-base/base';
+@import '2-base/base';
 
 
 /* =======================
 :: 3-Modules
 ======================= */
 /* >>>>>>>>>>>>>> :: 3.1-Header <<<<<<<<<<<<<<< */
-@use '3-modules/header';
+@import '3-modules/header';
 /* >>>>>>>>>>>>>> :: 3.2-Sidebar <<<<<<<<<<<<<<< */
-@use '3-modules/sidebar';
+@import '3-modules/sidebar';
 /* >>>>>>>>>>>>>> :: 3.3-Projects <<<<<<<<<<<<<<< */
-@use '3-modules/projects';
+@import '3-modules/projects';
 /* >>>>>>>>>>>>>> :: 3.4-Section Testimonials <<<<<<<<<<<<<<< */
-@use '3-modules/section-testimonials';
+@import '3-modules/section-testimonials';
 /* >>>>>>>>>>>>>> :: 3.5-Article <<<<<<<<<<<<<<< */
-@use '3-modules/article';
+@import '3-modules/article';
 /* >>>>>>>>>>>>>> :: 3.6-Section FAQ <<<<<<<<<<<<<<< */
-@use '3-modules/section-faq';
+@import '3-modules/section-faq';
 /* >>>>>>>>>>>>>> :: 3.7-Sections <<<<<<<<<<<<<<< */
-@use '3-modules/sections';
+@import '3-modules/sections';
 /* >>>>>>>>>>>>>> :: 3.8-Section Subscribe <<<<<<<<<<<<<<< */
-@use '3-modules/section-subscribe';
+@import '3-modules/section-subscribe';
 /* >>>>>>>>>>>>>> :: 3.9-Pagination <<<<<<<<<<<<<<< */
-@use '3-modules/pagination';
+@import '3-modules/pagination';
 /* >>>>>>>>>>>>>> :: 3.10-Footer <<<<<<<<<<<<<<< */
-@use '3-modules/footer';
+@import '3-modules/footer';
 /* >>>>>>>>>>>>>> :: 3.11-Gallery <<<<<<<<<<<<<<< */
-@use '3-modules/gallery';
+@import '3-modules/gallery';
 /* >>>>>>>>>>>>>> :: 3.12-Buttons <<<<<<<<<<<<<<< */
-@use '3-modules/buttons';
+@import '3-modules/buttons';
 /* >>>>>>>>>>>>>> :: 3.13-Contact <<<<<<<<<<<<<<< */
-@use '3-modules/contact';
+@import '3-modules/contact';
 
 
 /* =======================
 :: 4-Layouts
 ======================= */
 /* >>>>>>>>>>>>>> :: 4.1-Post + Page <<<<<<<<<<<<<<< */
-@use '4-layouts/post';
+@import '4-layouts/post';
 /* >>>>>>>>>>>>>> :: 4.2-Tags <<<<<<<<<<<<<<< */
-@use '4-layouts/tags';
+@import '4-layouts/tags';
